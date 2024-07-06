@@ -70,13 +70,15 @@ function Banner() {
       </ScrollLink>
       <ScrollLink to="about" smooth={true}>
         <motion.p variants={{
-          hidden:{opacity:0,scale:0.1},
+          hidden:{opacity:0,scale:0.5},
           visible:{opacity:1,scale:1},
         }}
         initial="hidden"
         animate ="visible"
         transition={{duration:1, delay:2.2}} style={{ paddingTop: "30px", cursor: "pointer" }}>
+          <div className="bounce">
           <RiScrollToBottomFill /> Scroll down
+          </div>
         </motion.p>
       </ScrollLink>
       <div className="social-media">
