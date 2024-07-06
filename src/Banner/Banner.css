@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Margarine&display=swap');
+
+.banner-container {
+  position: relative;
+  text-align: center;
+  font-family: "Margarine", sans-serif;
+  letter-spacing: 3px;
+  padding-top: 60px;
+  overflow: hidden;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn{
+  width: 200px;
+  margin: auto;
+}
+
+.banner-container span {
+  font-size: 16px;
+  color: #888;
+}
+
+.banner-container h2 {
+  font-size: 40px;
+  color: #888;
+}
+
+.banner-container h2 span {
+  background: linear-gradient(
+    to right,
+    red 20%,
+    yellow 30%,
+    white 70%,
+    gray 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  background: linear-gradient(to right, red, yellow);
+  color: white;
+  font-weight: bolder;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+button:hover{
+  background: linear-gradient(to right, yellow, red);
+}
+
+ a {
+  font-size: 14px;
+  color: red;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.social-media{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  font-size: 26px;
+  padding-top: 10px;
+  left: 10%;
+}
+.social-media a{
+  font-size: 24px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .banner-container {
+    padding-top: 60px; 
+    margin: 10px;
+  }
+
+  .banner-container span {
+    font-size: 14px;
+    color: #888;
+  }
+
+  .banner-container h2 span  {
+    font-size: 26px;
+    color: #888;
+  }
+  .banner-container h2{
+    font-size: 24px;
+  }
+
+  .social-media {
+    visibility: hidden;
+  }
+}

@@ -1,0 +1,119 @@
+/* About.css */
+
+.About {
+    padding: 20px; 
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+   h1 {
+    font-size: 34px;
+    margin-bottom: 20px; 
+    font-family: "Ga Maamli", sans-serif;
+    font-weight: 400;
+    background: linear-gradient(
+        to right,
+        red 70%,
+        gray 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* text-fill-color: transparent; */
+    background-size: 500% auto;
+    animation: textShine 3s ease-in-out infinite alternate;
+  }
+  
+  .About-flex {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center;
+    gap: 20px; 
+  }
+  
+  .about-img img {
+    max-width: 500px; 
+    height: auto; 
+    border-radius: 30px;
+  }
+  
+  .about-text {
+    flex: 1; 
+    max-width: 600px;
+    text-align: left; 
+  }
+  .about-text p{
+    font-size: 16px;
+    font-family: "Margarine", sans-serif;
+    line-height: 40px;
+  }
+  @media (max-width: 768px) {
+    
+    .About {
+      padding: 10px; 
+    }
+  
+    .About h1 {
+      font-size: 1.5em; 
+    }
+  
+    .About-flex {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .about-img img {
+      max-width: 100%; 
+    }
+  
+    .about-text {
+      max-width: 100%; 
+      text-align: center; 
+    }
+  }
+  
+
+/* Skills */
+
+
+.skills-container {
+  padding: 20px;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.slick-slider {
+  margin: 0 auto;
+  width: 80%; /* Adjust width as needed */
+}
+
+.slick-slide {
+  text-align: center;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.skill-item p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .slick-slider {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .slick-slider {
+    width: 100%; /* Full width on even smaller screens */
+  }
+}
